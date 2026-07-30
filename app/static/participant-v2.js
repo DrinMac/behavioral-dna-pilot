@@ -218,7 +218,7 @@ function homePage() {
       <div class="info-card"><span class="info-number">04</span><strong>Pseudonymous identity</strong><span>No name, email, precise address, password, or exact device location is required.</span></div>
     </div>
 
-    <div class="notice info"><strong>Data privacy and anonymity.</strong> You will be assigned a random <strong>DNA-XXXXX</strong> Participant ID. Your study records will be linked to that code rather than your name. Questions or withdrawal requests may be directed to ${escapeHtml(state.config.study_contact)}.</div>
+    <div class="notice info"><strong>Data privacy and anonymity.</strong> You will be assigned a random <strong>DNA-XXXXX</strong> Participant ID. Your study records will be linked to that code rather than your name. This is an exploratory work in our cybersecurity course as partial requirement of the Master in Information Technology program at Mariano Marcos State University. Hence, all collected information shall be used for the sole purpose of this study and will be treated with the highest form of confidentiality. Questions or withdrawal requests may be directed to ${escapeHtml(state.config.study_contact)}.</div>
 
     <div class="path-choice" role="radiogroup" aria-label="Participation type">
       <label class="choice-card">
