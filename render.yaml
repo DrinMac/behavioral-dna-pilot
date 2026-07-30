@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: behavioral-dna-pilot-am
+    runtime: docker
+    plan: free
+    region: singapore
+    healthCheckPath: /api/health
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: SECRET_KEY
+        generateValue: true
+      - key: RESEARCHER_PASSWORD
+        sync: false
+      - key: DATABASE_URL
+        sync: false
+      - key: TARGET_SESSIONS
+        value: "10"
+      - key: CONSENT_VERSION
+        value: "1.0"
+      - key: STUDY_CONTACT
+        sync: false
+      - key: STORE_KEY_VALUES
+        value: "false"

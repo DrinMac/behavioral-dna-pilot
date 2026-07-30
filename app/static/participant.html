@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Behavioral DNA longitudinal keystroke dynamics participant study">
+  <meta name="theme-color" content="#102a43">
+  <title>Behavioral DNA Participant Study</title>
+  <link rel="stylesheet" href="/static/participant-v2.css?v=4.2.0">
+</head>
+<body>
+  <main class="study-shell">
+    <header class="study-header">
+      <div class="brand-lockup" aria-label="Behavioral DNA study">
+        <div class="brand-symbol" aria-hidden="true">
+          <span></span><span></span><span></span><span></span>
+        </div>
+        <div>
+          <strong>Behavioral DNA</strong>
+          <small>Continuous Authentication Study</small>
+        </div>
+      </div>
+      <div id="participantBadge" class="participant-badge" hidden></div>
+    </header>
+
+    <section class="progress-region" aria-label="Study progress">
+      <div class="progress-copy">
+        <span id="progressLabel">Welcome</span>
+        <span id="progressCount"></span>
+      </div>
+      <div class="progress-rail" aria-hidden="true"><span id="progressFill"></span></div>
+    </section>
+
+    <section id="app" class="study-card" aria-live="polite" aria-busy="true">
+      <div class="loading-screen">
+        <div class="loading-mark" aria-hidden="true"></div>
+        <p>Preparing the study…</p>
+      </div>
+    </section>
+
+    <footer class="study-footer">
+      <span>Use only the study fields shown on this website.</span>
+      <span>Do not enter passwords or confidential information.</span>
+    </footer>
+  </main>
+
+  <noscript>This study requires JavaScript to capture keystroke timing.</noscript>
+  <script src="/static/participant-v2.js?v=4.2.0" defer></script>
+</body>
+</html>
